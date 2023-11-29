@@ -1,13 +1,13 @@
 {
-  "name": "@suri/deploy-docker",
+  "name": "@surishortlink/deploy-docker",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "description": "A template repository tailored for deploying Suri with Docker",
-  "homepage": "https://github.com/staticsuri/suri-deploy-docker#readme",
-  "bugs": "https://github.com/staticsuri/suri-deploy-docker/issues",
+  "homepage": "https://github.com/surishortlink/suri-deploy-docker#readme",
+  "bugs": "https://github.com/surishortlink/suri-deploy-docker/issues",
   "license": "MIT",
-  "repository": "staticsuri/suri-deploy-docker",
+  "repository": "surishortlink/suri-deploy-docker",
   "scripts": {
     "build": "suri"
   },
