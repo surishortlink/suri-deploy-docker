@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-ARG NODE_VERSION=20
+ARG NODE_VERSION=lts
 
 FROM node:${NODE_VERSION}-alpine AS build
 WORKDIR /suri
@@ -14,5 +14,5 @@ RUN npm run build
 FROM scratch AS export
 COPY --from=build /suri/build .
 
-FROM lipanski/docker-static-website:latest
+FROM lipanski/docker-static-website:2.6.0
 COPY --from=export . .
