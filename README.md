@@ -29,6 +29,13 @@ Suri, including additional deployment options.
    [docker-static-website](https://github.com/lipanski/docker-static-website) to
    produce a very small image.
 
+   On 32-bit ARM, such as a Raspberry Pi running a 32-bit OS, build with Node.js
+   22 instead, since newer versions no longer support it:
+
+   ```bash
+   docker build --build-arg NODE_VERSION=22 --tag suri .
+   ```
+
 4. Start a new container using the image, which serves the static site on port
    `3000`:
 
