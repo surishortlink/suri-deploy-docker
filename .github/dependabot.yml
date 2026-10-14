@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    # Give new releases a week to settle before opening a pull request.
+    cooldown:
+      default-days: 7
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+    # Give new releases a week to settle before opening a pull request.
+    cooldown:
+      default-days: 7
