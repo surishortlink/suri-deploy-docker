@@ -36,6 +36,10 @@ Suri, including additional deployment options.
    docker run --interactive --tty --rm --init --publish 3000:3000 suri
    ```
 
+Pull requests are built by GitHub Actions, so a mistake in `links.json` is
+caught before it's merged. You can change this by editing
+[`.github/workflows/build.yml`](.github/workflows/build.yml).
+
 ### Build Only, Don't Serve
 
 If you're just looking to build the static site, but not serve it, you can
